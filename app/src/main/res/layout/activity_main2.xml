@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Enter Details Below"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="24dp"
+        android:layout_below="@+id/textTitle"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/idno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID Number"
+        android:textSize="24dp"
+        android:layout_below="@+id/name"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/textGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="24dp"
+        android:layout_below="@id/idno"
+        />
+
+    <CheckBox
+        android:id="@+id/MaleCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textGender"
+        />
+
+    <TextView
+        android:id="@+id/textMale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textSize="24dp"
+        android:layout_below="@id/MaleCheck"
+        android:gravity="center_horizontal"
+        />
+
+    <CheckBox
+        android:id="@+id/FemaleCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textMale"
+        />
+
+    <TextView
+        android:id="@+id/textFemale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:textSize="24dp"
+        android:layout_below="@id/FemaleCheck"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/textMajor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Major:"
+        android:textSize="24dp"
+        android:layout_below="@id/textFemale"
+        android:paddingTop="50dp"
+        />
+
+    <CheckBox
+        android:id="@+id/APTCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textMajor"
+        />
+
+    <TextView
+        android:id="@+id/textAPT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Applied Computer Technologies"
+        android:textSize="24dp"
+        android:layout_below="@id/APTCheck"
+        android:gravity="center_horizontal"
+        />
+
+    <CheckBox
+        android:id="@+id/SWECheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAPT"
+        />
+
+    <TextView
+        android:id="@+id/textSWE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Software Engineering"
+        android:textSize="24dp"
+        android:layout_below="@id/SWECheck"
+        android:gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Insert new Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/textSWE"
+        />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Update Data"
+        android:layout_below="@id/btnInsert"
+        />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Delete Data"
+        android:layout_below="@id/btnUpdate"
+        />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="View Data"
+        android:layout_below="@id/btnDelete"
+        />
+
+</RelativeLayout>
